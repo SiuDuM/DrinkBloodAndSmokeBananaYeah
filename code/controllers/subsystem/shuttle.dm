@@ -618,13 +618,13 @@ SUBSYSTEM_DEF(shuttle)
 	var/transit_path = /turf/open/space/transit
 	switch(travel_dir)
 		if(NORTH)
-			transit_path = /turf/open/space/transit/north
+			transit_path = /turf/open/floor/plating // /turf/open/space/transit/north
 		if(SOUTH)
-			transit_path = /turf/open/space/transit/south
+			transit_path = /turf/open/floor/plating // /turf/open/space/transit/south
 		if(EAST)
-			transit_path = /turf/open/space/transit/east
+			transit_path = /turf/open/floor/plating // /turf/open/space/transit/east
 		if(WEST)
-			transit_path = /turf/open/space/transit/west
+			transit_path = /turf/open/floor/plating // /turf/open/space/transit/west
 
 	var/datum/turf_reservation/proposal = SSmapping.request_turf_block_reservation(
 		transit_width,

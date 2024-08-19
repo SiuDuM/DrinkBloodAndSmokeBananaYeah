@@ -35,17 +35,18 @@
 	normal_gases = list(
 		/datum/gas/oxygen=10,
 		/datum/gas/nitrogen=10,
-		/datum/gas/carbon_dioxide=10,
+//		/datum/gas/carbon_dioxide=10,
 	)
 	restricted_gases = list(
-		/datum/gas/plasma=0.1,
+//		/datum/gas/plasma=0.1,
+		/datum/gas/healium=0.1,
 		/datum/gas/water_vapor=0.1,
 		/datum/gas/miasma=1.2,
 	)
 	restricted_chance = 20
 
-	minimum_pressure = HAZARD_LOW_PRESSURE + 10
-	maximum_pressure = LAVALAND_EQUIPMENT_EFFECT_PRESSURE - 1
+	minimum_pressure = 100 //HAZARD_LOW_PRESSURE + 10
+	maximum_pressure = 110 //LAVALAND_EQUIPMENT_EFFECT_PRESSURE - 1
 
 	minimum_temp = ICEBOX_MIN_TEMPERATURE
 	maximum_temp = ICEBOX_MIN_TEMPERATURE
